@@ -7,3 +7,13 @@ output:
 # cprint: Copy Print
 
 Coming soon!
+
+## Installation
+
+## Basic usage
+
+```{r}
+# Output can be copy and pasted directly into a script or the R interpreter
+library(cprint)
+cprint(head(iris))
+```
