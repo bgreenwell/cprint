@@ -33,3 +33,10 @@ cprint(iris[1:5, ])
 cprint(iris$Petal.Width[1:5])
 cprint(iris$Species[1:5])
 ```
+
+
+## TODO
+
+* Preserve numeric precision
+* Support matrices
+

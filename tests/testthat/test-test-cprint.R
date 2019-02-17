@@ -24,13 +24,20 @@ test_that("cprint() works for factors", {
 
 test_that("cprint() works for data frames", {
   set.seed(101)
-  d <- data.frame(
+  d1 <- data.frame(
     x = rnorm(length(letters)),
     y = as.factor(letters)
   )
-  txt <- capture.output(cprint(d))
-  res <- eval(parse(text = txt))
-  expect_equal(d, res)
+  d2 <- data.frame(
+    x = as.factor(letters),
+    y = rnorm(length(letters))
+  )
+  txt1 <- capture.output(cprint(d1))
+  txt2 <- capture.output(cprint(d2))
+  res1 <- eval(parse(text = txt1))
+  res2 <- eval(parse(text = txt2))
+  expect_equal(d1, res1)
+  expect_equal(d2, res2)
 })
 
 test_that("cprint() works for data frames", {
