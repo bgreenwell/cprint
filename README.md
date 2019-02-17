@@ -52,3 +52,8 @@ cprint(iris$Species[1:5])
 ```
 
     ## factor(c("setosa", "setosa", "setosa", "setosa", "setosa"))
+
+## TODO
+
+  - Preserve numeric precision
+  - Support matrices
