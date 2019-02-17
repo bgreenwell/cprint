@@ -1,10 +1,15 @@
 
 # cprint: Copy Print
 
+[![Travis build
+status](https://travis-ci.org/bgreenwell/cprint.svg?branch=master)](https://travis-ci.org/bgreenwell/cprint)
+[![Coverage
+status](https://codecov.io/gh/bgreenwell/cprint/branch/master/graph/badge.svg)](https://codecov.io/github/bgreenwell/cprint?branch=master)
+
 This is a simple package to solve an issue I run into quite often:
 convert a simple data structure I am working with (i.e., a vector or
 data frame) into code that can be copy and pasted into an R script or
-the interpreter that will reproduce the original object.
+the R interpreter that will reproduce the original object.
 
 ## Installation
 
@@ -19,7 +24,7 @@ devtools::install_github("bgreenwell/cprint")
 
 ## Basic usage
 
-Output can be copy and pasted directly into a script or the R
+Output can be copied and pasted directly into an R script or the R
 interpreter:
 
 ``` r
