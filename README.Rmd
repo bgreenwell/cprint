@@ -1,19 +1,32 @@
 ---
-output:
-  md_document:
-    variant: markdown_github
+output: github_document
 ---
 
 # cprint: Copy Print
 
-Coming soon!
+This is a simple package to solve an issue I run into quite often: convert a simple data structure I am working with (i.e., a vector or data frame) into code that can be copy and pasted into an R script or the R interpreter that will reproduce the original object.
+
 
 ## Installation
 
+Install from GitHub:
+
+```{r installation, eval=FALSE}
+if (!requireNamespace("devtools")) {
+  install.packages("devtools")
+}
+devtools::install_github("bgreenwell/cprint")
+```
+
+
 ## Basic usage
 
-```{r}
-# Output can be copy and pasted directly into a script or the R interpreter
+Output can be copied and pasted directly into an R script or the R interpreter:
+
+```{r example}
 library(cprint)
-cprint(head(iris))
+
+cprint(iris[1:5, ])
+cprint(iris$Petal.Width[1:5])
+cprint(iris$Species[1:5])
 ```

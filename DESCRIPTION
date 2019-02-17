@@ -1,12 +1,12 @@
 Package: cprint
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: Copy Print
+Version: 0.0.1
+Authors@R: person("Brandon", "Greenwell", email = "greenwell.brandon@gmail.com",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8120-0084"))
+Description: print common R data structures in a form which can be used as input 
+    to the interpreter.
+License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1

@@ -4,14 +4,17 @@
 \alias{cprint}
 \alias{cprint.numeric}
 \alias{cprint.character}
+\alias{cprint.factor}
 \alias{cprint.data.frame}
-\title{Copy Print}
+\title{Copy print}
 \usage{
 cprint(x, ...)
 
 \method{cprint}{numeric}(x, ...)
 
 \method{cprint}{character}(x, ...)
+
+\method{cprint}{factor}(x, ...)
 
 \method{cprint}{data.frame}(x, ...)
 }
@@ -21,10 +24,9 @@ cprint(x, ...)
 \item{...}{Additional optional arguments. (Currently ignored.)}
 }
 \description{
-\code{cprint()}  prints common R data structures in a format which can be
-used as input to the interpreter.
+The \code{cprint} function provides a capability to print common R data
+structures in a form which can be used as input to the interpreter.
 }
 \examples{
-
-cprint(head(iris))  # output can easily be copied into a script file
+cprint(iris)  # output can easily be copied into an RStudio script file
 }
