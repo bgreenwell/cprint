@@ -6,6 +6,7 @@
 \alias{cprint.character}
 \alias{cprint.factor}
 \alias{cprint.data.frame}
+\alias{cprint.lm}
 \title{Copy print}
 \usage{
 cprint(x, ...)
@@ -17,6 +18,8 @@ cprint(x, ...)
 \method{cprint}{factor}(x, ...)
 
 \method{cprint}{data.frame}(x, ...)
+
+\method{cprint}{lm}(x, ...)
 }
 \arguments{
 \item{x}{An appropriate R object.}

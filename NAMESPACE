@@ -3,5 +3,6 @@
 S3method(cprint,character)
 S3method(cprint,data.frame)
 S3method(cprint,factor)
+S3method(cprint,lm)
 S3method(cprint,numeric)
 export(cprint)

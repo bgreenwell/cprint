@@ -73,3 +73,11 @@ cprint.data.frame <- function(x, ...) {
   }
   cat(")", "\n", ...)
 }
+
+
+#' @rdname cprint
+#'
+#' @export
+cprint.lm <- function(x, ...) {
+  stats::getCall(x)
+}
